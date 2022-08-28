@@ -34,7 +34,12 @@ namespace SwordDamageCalculator
         }
         public void SetFlaming(bool isFlaming)
         {
+            CalculateDamage();
+            if (isFlaming)
+            {
+
             Damage += FLAME_DAMAGE;
+            }
         }
     }
 }
